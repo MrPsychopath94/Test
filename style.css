@@ -1,0 +1,42 @@
+.carousel-container {
+  width: 500px; /* Breite anpassen */
+  margin: 0 auto; /* Zentrieren */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: none; /* Alle Slides verstecken */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Pfeile stylen */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px; /* Hälfte der Pfeilhöhe */
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
